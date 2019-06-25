@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 CORS(app)
 
-APP_ID = "2f15e17c4acb2fb77b1e3e6ae76e5981"
+APP_ID = "YOUR_KEY"
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q={city}&appid={app_id}"
 
 @app.route('/weather/<string:city>', methods=['GET'])

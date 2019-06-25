@@ -10,7 +10,7 @@ $ sudo yum -y install python3.x86_64 python3-pip.noarch python3-tools.x86_64
 pip3でFlaskおよび必要なパッケージをインストール
 
 ```
-$ sudo pip3 install flask flask-cors requests json
+$ sudo pip3 install flask flask-cors requests
 ```
 
 サーバーの実行

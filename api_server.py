@@ -16,5 +16,9 @@ def get_all(city):
 	result = requests.get(request_url)
 	return jsonify(json.loads(result.text)), 200
 
+@app.route('/test/', methods=['GET'])
+def get_test():
+	return jsonify([{"message": "OK"}]), 200
+
 if __name__ == "__main__":
     app.run(debug=True)
